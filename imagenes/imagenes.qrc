@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="mapa">
+    <file>PC.png</file>
     <file>SWITCH.png</file>
     <file>ROUTER.png</file>
     <file>SWITCH.png</file>
