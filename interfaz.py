@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from imagenes import imagenes
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -509,4 +509,4 @@ class Ui_Dialog(object):
         self.label_47.setText(_translate("Dialog", "ESTADO"))
         self.label_48.setText(_translate("Dialog", "WORKING STATION 10"))
         self.label_49.setText(_translate("Dialog", "ESTADO"))
-import imagenes_rc
+
