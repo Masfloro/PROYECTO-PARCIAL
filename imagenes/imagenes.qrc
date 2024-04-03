@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="mapa">
+    <file>SWITCH.png</file>
+    <file>ROUTER.png</file>
+    <file>SWITCH.png</file>
+    <file>PLANO.jpg</file>
+  </qresource>
+</RCC>
