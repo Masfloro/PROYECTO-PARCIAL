@@ -50,25 +50,25 @@ class MiApp(QtWidgets.QMainWindow):
 		self.switches = [self.switch_logistica,self.switch_talento,self.switch_sistemas,self.switch_contabilidad,self.switch_produccion]
 
 
-		self.ips= self.pcs + self.routers + self.switches
+		self.ips = self.pcs + self.routers + self.switches
 
-		self.ping_thread = threading.Thread(target=self.correr_ping(self.ips))
+		self.ping_thread = threading.Thread(target=self.correr_ping)
 		self.ping_thread.start()
 
 
 	
-	def correr_ping(self,ips):
+	def correr_ping(self):
+		ip = '192.168.1.1'
 		while(True):
-			for ip in ips:
-				response = ping3.ping(ip)
-				if  response is not None and response > 0:
+			response = ping3.ping(ip)
+			if  response is not None and response > 0:
 					#self.cambiar_label_color((0,255,0))
-					print(ip)
-					time.sleep(2)
-				if response is False:
+				print(ip)
+				time.sleep(2)
+			if response is False:
 					#self.cambiar_label_color((255,0,0))
-					print(ip)
-					time.sleep(2)
+				print(ip)
+				time.sleep(2)
 			
 
 	def cambiar_label_color(self,color):
